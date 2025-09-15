@@ -5,67 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
-    <title>Document</title>
+    <title>Ekstrakurikuler</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-<?php include 'navbar.php';?>
-    <!-- SECTION ESKUL -->
+    <!-- Navbar -->
+    <?php include 'navbar.php'; ?>
+
+    <!-- Data Eskul -->
     <?php
     $eskul = [
-            ["img" => "galeri/paskibra.png", "nama" => "Paskibra"],
-            ["img" => "galeri/pmr.png", "nama" => "PMR"],
-            ["img" => "galeri/Pramuka.png", "nama" => "Pramuka"],
-            ["img" => "galeri/pks.png", "nama" => "PKS"],
-            ["img" => "galeri/plh.png", "nama" => "PLH"],
-            ["img" => "galeri/pd.jpg", "nama" => "Perisai Diri"],
-            ["img" => "galeri/ec.png", "nama" => "English Club"],
-            ["img" => "galeri/it.png", "nama" => "IT Club"],
-            ["img" => "galeri/cinema.png", "nama" => "Cinematography"],
-            ["img" => "galeri/laskarpustaka.png", "nama" => "Laskar Pustaka"],
-            ["img" => "galeri/irma.png", "nama" => "Irma"],
-            ["img" => "galeri/bulutangkis.png", "nama" => "Bulu Tangkis"],
-            ["img" => "galeri/futsal.png", "nama" => "Futsal"],
-            ["img" => "galeri/basket.png", "nama" => "Basket"],
-            ["img" => "galeri/voli.jpg", "nama" => "Voli"],
-            ["img" => "galeri/sepakbola.jpg", "nama" => "Sepak Bola"],
-            ["img" => "galeri/seni.png", "nama" => "Seni"],
-        ];
-        $i = 0;
-        ?>
+        ["img" => "galeri/paskibra.png", "nama" => "Paskibra"],
+        ["img" => "galeri/pmr.png", "nama" => "PMR"],
+        ["img" => "galeri/pramuka.png", "nama" => "Pramuka"],
+        ["img" => "galeri/pks.png", "nama" => "PKS"],
+        ["img" => "galeri/plh.png", "nama" => "PLH"],
+        ["img" => "galeri/pd.jpg", "nama" => "Perisai Diri"],
+        ["img" => "galeri/ec.png", "nama" => "English Club"],
+        ["img" => "galeri/it.png", "nama" => "IT Club"],
+        ["img" => "galeri/cinema.png", "nama" => "Cinematography"],
+        ["img" => "galeri/laskarpustaka.png", "nama" => "Laskar Pustaka"],
+        ["img" => "galeri/irma.png", "nama" => "Irma"],
+        ["img" => "galeri/bulutangkis.png", "nama" => "Bulu Tangkis"],
+        ["img" => "galeri/futsal.png", "nama" => "Futsal"],
+        ["img" => "galeri/basket.png", "nama" => "Basket"],
+        ["img" => "galeri/voli.jpg", "nama" => "Voli"],
+        ["img" => "galeri/sepakbola.jpg", "nama" => "Sepak Bola"],
+        ["img" => "galeri/seni.png", "nama" => "Seni"],
+    ];
+    ?>
 
-    <section
-        style="background-image: url(galeri/gelombang-putih.jpg); background-size: cover; background-position: center; padding: 50px;">
+    <!-- Section Eskul -->
+    <section style="background-image: url(galeri/gelombang-putih.jpg); background-size: cover; background-position: center; padding: 50px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center pt-5">Ekstrakulikuler</h2><br>
+                    <h2 class="text-center pt-5">Ekstrakurikuler</h2>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <?php while ($i < count($eskul)): ?>
-            <div class="col-lg-4 mb-5">
-                <div class="card text-center" style="border-radius: 20px;">
-                    <div class="card-body">
-                        <img src="<?= $eskul[$i]['img']?>" style="width: 200px; height: 200px; " alt="">
-                        <p>
-                        <h5><?= $eskul[$i]['nama'] ?></h5>
-                        </p>
+
+        <!-- Pencarian -->
+        <div class="container mt-4">
+            <div class="input-group mb-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Cari">
+                <button class="btn btn-primary" onclick="cariEskul()">Cari</button>
+            </div>
+        </div>
+
+        <!-- Daftar Eskul -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <?php foreach ($eskul as $item): ?>
+                <div class="col-lg-4 mb-5" id="<?= strtolower($item['nama']) ?>">
+                    <div class="card text-center" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <img src="<?= $item['img'] ?>" style="width: 200px; height: 200px;" alt="<?= $item['nama'] ?>">
+                            <h5 class="mt-3"><?= $item['nama'] ?></h5>
+                        </div>
                     </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-            <?php $i++; // naikin index ?>  
-            <?php endwhile;?>
         </div>
     </section>
 
-    <!-- section footer -->
-    
-<?php include 'footer.php';?>
-</body>
+    <!-- Script Pencarian -->
+    <script>
+        function cariEskul() {
+            const input = document.getElementById('searchInput').value.toLowerCase().trim();
+            const target = document.getElementById(input);
 
+            if (target) {
+                alert("Eskul " + input.toUpperCase() + " ditemukan, scroll ke bawah.");
+
+                const navbar = document.querySelector('.navbar');
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+                const elemenPosition = target.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elemenPosition - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            } else {
+                alert("Eskul " + input.toUpperCase() + " tidak ditemukan!");
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+    <?php include 'footer.php'; ?>
+</body>
 </html>
