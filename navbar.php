@@ -1,71 +1,48 @@
-<!-- Bootstrap CSS di <head> -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: #005B8A;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="galeri/LOGO-SMK4.Ba-Cc_BE.png" width="50px" height="55px" alt="">
-    </a>
-    <h5 class="text-white mb-0">SMKN 4 Tasikmalaya</h5>
-
-    <!-- Tombol hamburger -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: #005B8A">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="galeri/LOGO-SMK4.Ba-Cc_BE.png" width="50px" height="50px" alt=""></a><h5 class="text-white mb-0">SMKN 4 Tasikmalaya</h5>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active text-white" href="index.php">Beranda</a>
+        <a class="nav-link active text-white" aria-current="page" href="index.php">Beranda</a>
         </li>
-
-        <!-- Dropdown Profil -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link active dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Profil
           </a>
-          <ul class="dropdown-menu" style="background-color: #005B8A; box-shadow:0px 4px 8px rgba(0,0,0,0.3);">
-            <li><a class="dropdown-item text-white" href="sejarah.php">Sejarah</a></li>
-            <li><a class="dropdown-item text-white" href="visimisi.php">Visi & Misi</a></li>
-            <li><a class="dropdown-item text-white" href="identitas.php">Identitas Sekolah</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
+            <li><a class="dropdown-item" href="visimisi.php">Visi & Misi</a></li>
+            <li><a class="dropdown-item" href="identitas.php">Identitas Sekolah</a>
           </ul>
         </li>
-
-        <!-- Dropdown Kurikulum -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link active dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kurikulum
           </a>
-          <ul class="dropdown-menu" style="background-color: #005B8A; box-shadow:0px 4px 8px rgba(0,0,0,0.3);">
-            <li><a class="dropdown-item text-white" href="jurusan.php">Konsentrasi Keahlian</a></li>
-            <li><a class="dropdown-item text-white" href="prestasi.php">Prestasi</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="jurusan.php">Konsentrasi Keahlian</a></li>
+            <li><a class="dropdown-item" href="prestasi.php">Prestasi</a></li>
           </ul>
         </li>
-
-        <!-- Dropdown Kesiswaan -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link active dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kesiswaan
           </a>
-          <ul class="dropdown-menu" style="background-color: #005B8A; box-shadow:0px 4px 8px rgba(0,0,0,0.3);">
-            <li><a class="dropdown-item text-white" href="organisasi.php">Organisasi</a></li>
-            <li><a class="dropdown-item text-white" href="eskul.php">Ekstrakulikuler</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="organisasi.php">Organisasi</a></li>
+            <li><a class="dropdown-item" href="eskul.php">Ekstrakulikuler</a></li>
           </ul>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link text-white" href="galeri.php">Galeri</a>
+        <a class="nav-link active text-white" href="galeri.php">Galeri</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="berita.php">Berita</a>
+        <a class="nav-link active text-white" href="berita.php">Berita</a>
         </li>
-      </ul>
     </div>
-  </div>
+</div>
 </nav>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

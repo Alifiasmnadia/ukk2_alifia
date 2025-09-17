@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
-    <title>Document</title>
+    <title>Visi & Misi | SMKN 4 TASIKMALAYA</title>
+    <link rel="icon" type="image/png" href="galeri/LOGO-SMK4.Ba-Cc_BE.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
@@ -16,7 +17,7 @@
 
     <!-- SECTION visi -->
     <section>
-        <div class="container pt-5 my-5 pb-5">
+        <div class="container pt-5 ">
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <h2 class="text-center pt-5">Visi & Misi</h2><br>
@@ -27,7 +28,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="card shadow" style="border-radius: 20px;">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 30px; color: white;">
                             <h5 class="text-center">Visi</h5>
                             <p>Terwujudnya lulusan yang Cerdas, Aktif, Kompetitif, Adaptif dan Produktif berlandaskan
                                 Iman dan Takwa
@@ -35,9 +36,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 pt-5">
+                <div class="col-lg-12 pt-5 pb-5">
                     <div class="card shadow" style="border-radius: 20px;">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 30px; color: white;">
                             <h5 class="text-center">Misi</h5>
                             <ol style="text-align: left; line-height: 3;">
                                 <li>Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill maupun
