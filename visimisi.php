@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<?php include 'navbar.php';?>
+    <?php include 'navbar.php'; ?>
 
     <!-- SECTION visi -->
     <section>
@@ -28,7 +28,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="card shadow" style="border-radius: 20px;">
-                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 30px; color: white;">
+                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 20px; color: white;">
                             <h5 class="text-center">Visi</h5>
                             <p>Terwujudnya lulusan yang Cerdas, Aktif, Kompetitif, Adaptif dan Produktif berlandaskan
                                 Iman dan Takwa
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-lg-12 pt-5 pb-5">
                     <div class="card shadow" style="border-radius: 20px;">
-                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 30px; color: white;">
+                        <div class="card-body text-center" style="background-color: #005B8A; border-radius: 20px; color: white;">
                             <h5 class="text-center">Misi</h5>
                             <ol style="text-align: left; line-height: 3;">
                                 <li>Menyiapkan Sumber Daya Manusia yang cerdas dan kompeten baik hardskill maupun
@@ -70,7 +70,7 @@
         </div>
     </section>
     <!-- section footer -->
-<?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
 </body>
 
