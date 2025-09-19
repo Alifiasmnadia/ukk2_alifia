@@ -81,37 +81,46 @@
 
 
         <!-- SECTION BERITA -->
-        <div class="container pt-5">
+       <?php
+$berita = [
+    [
+        "img" => "galeri/berita.JPG",
+        "title" => "SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja",
+        "link" => "https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/"
+    ],
+    [
+        "img" => "galeri/berita3.jpg",
+        "title" => "Sinergi Bagi Negeri, DAM Kerjasama dengan SMKN 4 Tasikmalaya Terapkan KTBSM Sepeda Motor Astra Honda",
+        "link" => "https://jabar.tribunnews.com/2023/03/02/sinergi-bagi-negeri-dam-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-ktbsm-sepeda-motor-astra-honda"
+    ]
+];
+?>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center">Berita</h2><br>
             <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-center">Berita</h2><br>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header"><img src="galeri/berita2.jpg"
-                                        class="img-fluid d-block mx-auto " alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h3>Siswa SMKN 4 Tasikmalaya Adu Inovasi dan Kreativitas di Expo Creanova</h3>
-                                </div>
+                <?php foreach ($berita as $item): ?>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-header text-center">
+                                <img src="<?= $item['img'] ?>" class="img-fluid d-block mx-auto" alt="">
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header"><img src="galeri/berita.JPG" class="img-fluid d-block mx-auto "
-                                        alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h3>SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja</h3>
-                                </div>
+                            <div class="card-body text-center">
+                                <h3><?= $item['title'] ?></h3>
                             </div>
-                        </div>
-                        <div class="text-center pt-5">
-                            <a href="berita.php" class="btn btn-outline-primary">baca selengkapnya</a>
                         </div>
                     </div>
-                </div>
-            </div><br><br>
+                <?php endforeach; ?>
+            </div>
+            <!-- satu tombol link ke halaman berita -->
+            <div class="text-center mt-4">
+                <a href="berita.php" class="btn btn-outline-primary">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </div><br><br>
+</div>
+
             <!-- TUTUP SECTION BERITA -->
 
 

@@ -35,7 +35,7 @@
         [
             "img" => "galeri/berita3.jpg",
             "title" => "Sinergi Bagi Negeri, DAM Kerjasama dengan SMKN 4 Tasikmalaya Terapkan KTBSM Sepeda Motor
-                 Astra Honda",
+                Astra Honda",
             "link" => "https://jabar.tribunnews.com/2023/03/02/sinergi-bagi-negeri-dam-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-ktbsm-sepeda-motor-astra-honda"
         ]
     ];
