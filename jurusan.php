@@ -17,11 +17,7 @@
     <!-- TUTUP NAV -->
 
     <!-- section jurusan -->
-    <div class="section" style="background-image: url('galeri/bg.jpeg'); 
-  background-size: cover;  
-  background-position: center;  
-  background-attachment: fixed; 
-  padding: 60px 0;">
+    <div class="section">
     <div class="container pt-5 my-5">
         <h2 class="mb-5 text-center">Konsentrasi keahlian</h2>
         <div class="card shadow" style="border-radius: 15px;">

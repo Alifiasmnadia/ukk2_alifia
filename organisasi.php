@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="text-center pt-5">Ekstrakulikuler</h2><br>
+                    <h2 class="text-center pt-5">Organisasi</h2><br>
                 </div>
             </div>
         </div>

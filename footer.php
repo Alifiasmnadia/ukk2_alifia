@@ -48,7 +48,8 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center py-3 pt-5" style="border-color: white;">
+            <hr>
+            <div class="text-center " style="border-color: white;">
                 © 2025. SMK Negeri 4 Tasikmalaya. <br>
                 All rights reserved.
             </div>

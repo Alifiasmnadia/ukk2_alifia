@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Ekstrakurikuler | SMKN 4 TASIKMALAYA</title>
     <link rel="icon" type="image/png" href="galeri/LOGO-SMK4.Ba-Cc_BE.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -40,22 +41,23 @@
     ?>
 
     <!-- Section Eskul -->
-    <section style="background-image: url(galeri/gelombang-putih.jpg); background-size: cover; background-position: center; padding: 50px;">
+    <section class="section-eskul">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center pt-5">Ekstrakurikuler</h2>
+                    <h2 class="text-center py-5">Ekstrakurikuler</h2>
                 </div>
             </div>
         </div>
 
-        <!-- Pencarian -->
-        <div class="container mt-4">
-            <div class="input-group mb-3">
-                <input type="text" id="searchInput" class="form-control" placeholder="Cari">
-                <button class="btn btn-primary" onclick="cariEskul()">Cari</button>
-            </div>
-        </div>
+
+         <!-- Input Pencarian -->
+<div class="container mt-4">
+    <div class="input-group mb-3">
+        <input type="text" id="searchInput" class="form-control" placeholder="Cari">
+        <button class="btn btn-primary" onclick="cariEskul()">Cari</button>
+    </div>
+</div>
 
         <!-- Daftar Eskul -->
         <div class="container">
@@ -64,7 +66,7 @@
                 <div class="col-lg-4 mb-5">
                     <div class="card text-center" style="border-radius: 20px;">
                         <div class="card-body">
-                            <img src="<?= $item['img'] ?>" style="width: 200px; height: 200px;" alt="<?= $item['nama'] ?>">
+                            <img src="<?= $item['img'] ?>" class="img-eskul" alt="<?= $item['nama'] ?>">
                             <h5 class="mt-3"><?= $item['nama'] ?></h5>
                         </div>
                     </div>
@@ -96,6 +98,8 @@
     }
 }
     </script>
+
+
 
     <!-- Footer -->
     <?php include 'footer.php'; ?>
