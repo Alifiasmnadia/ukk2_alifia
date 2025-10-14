@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Jurusan | SMKN 4 TASIKMALAYA</title>
     <link rel="icon" type="image/png" href="galeri/LOGO-SMK4.Ba-Cc_BE.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -23,7 +24,7 @@
         <div class="card shadow" style="border-radius: 15px;">
             <div class="row p-4 m-5">
                 <div class="col-lg-2 text-center">
-                    <img src="galeri/tjkt.XeO8V4_I.png" class="img-fluid" style="max-width: 100px;" alt="">
+                    <img src="galeri/tjkt.XeO8V4_I.png" class="img-fluid section-img-jurusan"  alt="">
                 </div>
                 <div class="col-lg-10">
                     <h5>Teknik Komputer dan Jaringan (TKJ)</h5>
@@ -36,7 +37,7 @@
         <div class="card shadow my-5" style="border-radius: 15px;">
             <div class="row p-4 m-5">
                 <div class="col-lg-2 text-center">
-                    <img src="galeri/pplg.DhbRSnK2.png" class="img-fluid" style="max-width: 100px;" alt="">
+                    <img src="galeri/pplg.DhbRSnK2.png" class="img-fluid section-img-jurusan"  alt="">
                 </div>
                 <div class="col-lg-10 ">
                     <h5>Pengembangan Perangkat Lunak dan Gim (PPLG)</h5>
@@ -49,7 +50,7 @@
         <div class="card shadow my-5" style="border-radius: 15px;">
             <div class="row p-4 m-5">
                 <div class="col-lg-2 text-center">
-                    <img src="galeri/tbsm.5YZNeyvV.png" class="img-fluid" style="max-width: 100px;" alt="">
+                    <img src="galeri/tbsm.5YZNeyvV.png" class="img-fluid section-img-jurusan"   alt="">
                 </div>
                 <div class="col-lg-10 ">
                     <h5>Teknik Sepeda Motor (TSM)</h5>
@@ -61,7 +62,7 @@
         <div class="card shadow my-5" style="border-radius: 15px;">
             <div class="row p-4 m-5">
                 <div class="col-lg-2 text-center">
-                    <img src="galeri/dkv.Btdc-HP2.png" class="img-fluid" style="max-width: 100px;" alt="">
+                    <img src="galeri/dkv.Btdc-HP2.png" class="img-fluid section-img-jurusan"  alt="">
                 </div>
                 <div class="col-lg-10 ">
                     <h5>Desain Komunikasi Visual (DKV)</h5>
@@ -73,7 +74,7 @@
         <div class="card shadow my-5" style="border-radius: 15px;">
             <div class="row p-4 m-5">
                 <div class="col-lg-2 text-center">
-                    <img src="galeri/toi.BFD6ZBmB.png" class="img-fluid" style="max-width: 100px;" alt="">
+                    <img src="galeri/toi.BFD6ZBmB.png" class="img-fluid section-img-jurusan"  alt="">
                 </div>
                 <div class="col-lg-10 ">
                     <h5>Teknik Otomasi Industri (TOI)</h5>

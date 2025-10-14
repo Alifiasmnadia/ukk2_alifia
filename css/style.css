@@ -38,3 +38,56 @@
   color: white;
   font-weight: bold;
 }
+.h6-bagian2 {
+  position: absolute; 
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 24px; 
+  color: white;
+}
+.div-statistik {
+  background-color: rgb(48, 93, 160); 
+  color: white;
+  border-radius: 10px; 
+  border-right: 12;
+}
+.galeri-img-index {
+  object-fit: cover;
+}
+.section-img-jurusan {
+  max-width: 100px;
+}
+.section-organisasi {
+  background-image: url(galeri/gelombang-putih.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  padding: 50px;
+}
+.card-organisasi {
+  border-radius: 20px;
+}
+.img-organisasi {
+  width: 200px; 
+  height: 200px; 
+}
+.section-sejarah {
+  background-image: url(galeri/gelombang-putih.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  padding: 50px;
+}
+.img-sejarah {
+  width: 700px; 
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 15px;
+}
+.card-visi {
+  border-radius: 20px;
+}
+.cardbody-visi {
+  background-color: #005B8A; 
+  border-radius: 20px; 
+  color: white;
+}

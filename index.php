@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vendor/bs/bs.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>SMKN 4 TASIKMALAYA</title>
     <link rel="icon" type="image/png" href="galeri/LOGO-SMK4.Ba-Cc_BE.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -22,12 +22,10 @@
         <div class="div-section-gambar">
             <img src="galeri/smkatas.png" class="img-gambar-awal" alt="">
             <div class="div-gambar-awal">
-                <h6
-                    class="h6-gambarawal">
+                <h6 class="h6-gambarawal">
                     SMK Negeri 4 Tasikmalaya
                 </h6>
-                <h6
-                    style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: white;">
+                <h6 class="h6-bagian2">
                     Sekolah Pusat Keunggulan
                 </h6>
 
@@ -41,8 +39,7 @@
                 <div class="col-lg-3">
                     <div class="col-lg-12">
                         <div class="card text-center border-0">
-                            <div class="card-body"
-                                style="background-color: rgb(48, 93, 160); color: white; border-radius: 10px; border-right: 12;">
+                            <div class="card-body div-statistik">
                                 <img src="galeri/siswa.png" width="50px" height="50px" alt="">
                                 <h2>1500</h2>
                                 Peserta Didik
@@ -52,8 +49,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card text-center border-0">
-                        <div class="card-body"
-                            style="background-color: rgb(48, 93, 160); color: white; border-radius: 10px; border-right: 12;">
+                        <div class="card-body div-statistik">
                             <img src="galeri/pendidik.png" width="50px" height="50px" alt="">
                             <h2>82</h2>
                             Pendidik
@@ -62,8 +58,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card text-center border-0">
-                        <div class="card-body"
-                            style="background-color: rgb(48, 93, 160); color: white; border-radius: 10px; border-right: 12;">
+                        <div class="card-body div-statistik">
                             <img src="galeri/tu.png" width="50px" height="50px" alt="">
                             <h2>10</h2>
                             TU
@@ -72,8 +67,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card text-center border-0">
-                        <div class="card-body"
-                            style="background-color: rgb(48, 93, 160); color: white; border-radius: 10px; border-right: 12;">
+                        <div class="card-body div-statistik">
                             <img src="galeri/eskul.png" width="50px" height="50px" alt="">
                             <h2>17</h2>
                             ekstrakulikuler
@@ -189,8 +183,7 @@ $berita = [
                             <div class="col-lg-3">
                                 <div class="card">
                                     <div class="card-body">
-                                        <img src="<?= $galeri[$i] ?>" class="d-block mx-auto img-fluid" height="200px" alt=""
-                                            style="object-fit: cover;">
+                                        <img src="<?= $galeri[$i] ?>" class="d-block mx-auto img-fluid galeri-img-index" height="200px" alt="">
                                     </div>
                                 </div>
                             </div>
