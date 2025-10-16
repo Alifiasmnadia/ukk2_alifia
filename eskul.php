@@ -41,11 +41,11 @@
     ?>
 
     <!-- Section Eskul -->
-    <section class="section-eskul">
+    <section class="section-eskul section-title">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center py-5">Ekstrakurikuler</h2>
+                    <h2 class="text-center py-5 judul-section">Ekstrakurikuler</h2>
                 </div>
             </div>
         </div>

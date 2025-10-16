@@ -34,7 +34,7 @@
 
 
         <!-- section statistik -->
-         <div class="container">
+        <div class="container">
             <div class="row py-5 my-5">
                 <div class="col-lg-3">
                     <div class="col-lg-12">
@@ -80,124 +80,137 @@
     </section>
     </div><br><br>
 
-        <!-- SECTION SAMBUTAN -->
-        <div class="container my-5 ">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-center">
-                    <img src="galeri/kepalasekolah.CDMQ7SQv.png" height="250px" class="img-fluid rounded " alt="">
-                    <h4 class="mt-3 mb-1">Kurniawan S.Pd, M.Pd</h4>
-                    <p class="text-muted">Kepala Sekolah SMKN 4 Tasikmalaya</p>
+    <!-- SECTION SAMBUTAN -->
+    <section id="sambutan" class="p-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Sambutan Kepala Sekolah</h2>
+                <hr class="mx-auto garis-judul">
+            </div>
+
+            <div class="row align-items-center kotak-sambutan p-4">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="galeri/kepalasekolah1.jpg" alt="Kepala Sekolah" class="img-fluid foto-kepsek">
+                    <h4 class="mt-3 mb-1 fw-bold text-dark">Kurniawan S.Pd, M.Pd</h4>
+                    <p class="text-muted small">Kepala Sekolah SMKN 4 Tasikmalaya</p>
                 </div>
+
                 <div class="col-lg-8">
-                    <p>
-                        Assalamualaikum Warahmatullahi Wabarakatuh
-                    </p>
-                    <p>
-                        Segala puji dan syukur kita panjatkan kehadirat Allah SWT, semoga kita semua ada dalam
-                        lindungan-Nya. Dan atas perkenan-Nya pula kami dapat menghadirkan website SMK Negeri 4
-                        Tasikmalaya
-                        ini. Kami berharap dengan adanya website di SMK Negeri 4 Tasikmalaya ini para pengunjung dapat
-                        mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi antara
-                        sekolah
-                        dengan masyarakat demi kemajuan kita bersama. Tiada gading yang tak retak, website kami ini
-                        masih
-                        dalam proses pengembangan, masih banyak kekurangan yang harus kami perbaiki. Kritik dan sarannya
-                        yang membangun sangat kami harapkan untuk pengembangan ke depan.
-                    </p>
-                    <p>
-                        Akhirnya, saya mengucapkan terimakasih yang sebesar-besarnya kepada semua pihak yang tidak dapat
-                        disebutkan satu segala bantuan dan persatu atas fasilitasnya yang telah diberikan semoga semua
-                        yang
-                        kita lakukan bermanfaat bagi masyarakat.
-                    </p>
-                    <p>
-                        Wassalamu'alaikum Warahmatullahi Wabarakatuh.
-                    </p>
+                    <div class="isi-sambutan">
+                        <p class="fst-italic text-secondary mb-3">Assalamualaikum Warahmatullahi Wabarakatuh</p>
+                        <p>
+                            Segala puji dan syukur kita panjatkan kehadirat Allah SWT. Semoga kita semua senantiasa berada
+                            dalam lindungan-Nya. Atas izin dan rahmat-Nya pula kami dapat menghadirkan website SMK Negeri 4
+                            Tasikmalaya ini. Kami berharap melalui website ini, para pengunjung dapat mengenal lebih dekat
+                            sekolah kami sehingga dapat mempererat tali silaturahmi antara sekolah dengan masyarakat demi
+                            kemajuan bersama.
+                        </p>
+                        <p>
+                            Tiada gading yang tak retak, website ini masih dalam proses pengembangan dan tentunya masih
+                            terdapat kekurangan. Kami sangat mengharapkan kritik dan saran yang membangun demi
+                            penyempurnaan ke depannya.
+                        </p>
+                        <p>
+                            Akhirnya, kami ucapkan terima kasih kepada semua pihak yang telah membantu dalam berbagai hal
+                            sehingga website ini dapat terwujud. Semoga segala yang kita lakukan senantiasa bermanfaat bagi
+                            masyarakat.
+                        </p>
+                        <p class="fst-italic text-secondary">Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- SECTION BERITA -->
+    </section>
 
 
 
-        <!-- SECTION BERITA -->
+
+
+    <!-- SECTION BERITA -->
     <?php
-$berita = [
-    [
-        "img" => "galeri/berita.JPG",
-        "title" => "SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja",
-        "link" => "https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/"
-    ],
-    [
-        "img" => "galeri/berita3.jpg",
-        "title" => "Sinergi Bagi Negeri, DAM Kerjasama dengan SMKN 4 Tasikmalaya Terapkan KTBSM Sepeda Motor Astra Honda",
-        "link" => "https://jabar.tribunnews.com/2023/03/02/sinergi-bagi-negeri-dam-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-ktbsm-sepeda-motor-astra-honda"
-    ]
-];
-?>
-<div class="container pt-5">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="text-center">Berita</h2><br>
-            <div class="row">
-                <?php foreach ($berita as $item): ?>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card h-100">
-                            <div class="card-header text-center">
-                                <img src="<?= $item['img'] ?>" class="img-fluid d-block mx-auto" alt="">
+    $berita = [
+        [
+            "img" => "galeri/berita.JPG",
+            "title" => "SMKN 4 Tasikmalaya Koneksikan Iduka dengan Pencari Kerja",
+            "link" => "https://radartasik.id/2023/10/12/smkn-4-tasikmalaya-koneksikan-iduka-dengan-pencari-kerja/"
+        ],
+        [
+            "img" => "galeri/berita3.jpg",
+            "title" => "Sinergi Bagi Negeri, DAM Kerjasama dengan SMKN 4 Tasikmalaya Terapkan KTBSM Sepeda Motor Astra Honda",
+            "link" => "https://jabar.tribunnews.com/2023/03/02/sinergi-bagi-negeri-dam-kerjasama-dengan-smkn-4-tasikmalaya-terapkan-ktbsm-sepeda-motor-astra-honda"
+        ]
+    ];
+    ?>
+    <div class="container pt-5 section-title">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="judul-section ">Berita</h2><br>
+                <p class="text-muted">Informasi dan kegiatan terbaru dari SMKN 4 Tasikmalaya</p>
+                <div class="row">
+                    <?php foreach ($berita as $item): ?>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header text-center">
+                                    <img src="<?= $item['img'] ?>" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3><?= $item['title'] ?></h3>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h3><?= $item['title'] ?></h3>
-                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <!-- satu tombol link ke halaman berita -->
+                <div class="text-center mt-4">
+                    <a href="berita.php" class="btn btn-outline-primary">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div><br><br>
+    </div>
+
+    <!-- TUTUP SECTION BERITA -->
+
+
+    <!-- SECTION GALERI -->
+    <?php
+    $galeri = [
+        'galeri/ri.JPG',
+        'galeri/english2.JPG',
+        'galeri/hariguru4.JPG',
+        'galeri/kegiatan1.JPG',
+        'galeri/ri5.JPG',
+        'galeri/english.JPG',
+        'galeri/english4.JPG',
+        'galeri/hariguru.JPG'
+    ];
+    ?>
+    <section id="galeri" class="p-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Galeri Kegiatan</h2>
+                <hr class="garis-judul mx-auto">
+                <p class="text-muted">Kumpulan momen berharga kegiatan di SMKN 4 Tasikmalaya</p>
+            </div>
+
+            <div class="row g-4">
+                <?php foreach ($galeri as $g): ?>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="800">
+                        <div class="card border-0 shadow-sm overflow-hidden galeri-card">
+                            <img src="<?= $g ?>" class="img-fluid galeri-img" alt="Galeri">
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
-            <!-- satu tombol link ke halaman berita -->
-            <div class="text-center mt-4">
-                <a href="berita.php" class="btn btn-outline-primary">Baca Selengkapnya</a>
+
+            <div class="text-center mt-5">
+                <a href="galeri.php" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+                    Lihat Selengkapnya
+                </a>
             </div>
         </div>
-    </div><br><br>
-</div>
-
-            <!-- TUTUP SECTION BERITA -->
+    </section>
 
 
-            <!-- SECTION GALERI -->
-            <?php
-            $galeri = [
-                'galeri/ri.JPG',
-                'galeri/ri1.JPG',
-                'galeri/ri2.JPG',
-                'galeri/ri5.JPG'
-            ];
-            $i = 0;
-            ?>
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-center">Galeri</h2>
-                    <div class="row">
-                        <?php while ($i < count($galeri)): ?>
-                            <div class="col-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="<?= $galeri[$i] ?>" class="d-block mx-auto img-fluid galeri-img-index" height="200px" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++; ?>
-                        <?php endwhile; ?>
-                    </div>
-                    <br />
-                    <div class="text-center">
-                        <a href="galeri.php" class="btn btn-outline-primary">baca selengkapnya</a>
-                    </div>
-                </div>
-                </div>
-            </div><br><br>
-            
 
     <?php include 'footer.php'; ?>
 </body>

@@ -14,11 +14,11 @@
 </head>
 
 <body>
-<?php include 'navbar.php';?>
+    <?php include 'navbar.php'; ?>
 
     <!-- SECTION PRESTASI -->
-    <div class="container pt-5 mt-5 pb-5">
-        <h2 class="text-center pt-5 pb-5">Prestasi</h2>
+    <div class="container pt-5 mt-5 pb-5 section-title">
+        <h2 class="text-center pt-5 pb-5 judul-section">Prestasi</h2>
         <div class="container">
             <p></p>
         </div>
@@ -57,7 +57,7 @@
     </div>
 
     <!-- section footer -->
-<?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
 </body>
 

@@ -18,10 +18,10 @@
 
     <!-- SECTION visi -->
     <section>
-        <div class="container pt-5 ">
-            <div class="row justify-content-center">
+        <div class="container pt-5 section-title">
+            <div class="row justify-content-center ">
                 <div class="col-md-4">
-                    <h2 class="text-center pt-5">Visi & Misi</h2><br>
+                    <h2 class="judul-section pt-5">Visi & Misi</h2><br>
                 </div>
             </div>
         </div>

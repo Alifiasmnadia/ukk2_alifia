@@ -14,14 +14,14 @@
 </head>
 
 <body>
-<?php include 'navbar.php';?>
+    <?php include 'navbar.php'; ?>
 
     <!-- SECTION SEJARAH -->
     <section class="section-sejarah">
-        <div class="container">
+        <div class="container section-title">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="text-center pt-5">Sejarah Sekolah</h2><br>
+                    <h2 class="text-center pt-5 judul-section">Sejarah Sekolah</h2><br>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
             <div class="col-lg-7">
                 <div class="card shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body ">
-                        <img src="galeri/sejarahsmkn4.L2FuXsGa.jpg" class="d-block mx-auto mt-4 img-fluid img-sejarah"  alt=""><br>
+                        <img src="galeri/sejarahsmkn4.L2FuXsGa.jpg" class="d-block mx-auto mt-4 img-fluid img-sejarah" alt=""><br>
                         <h5>Latar Belakang</h5>
                         <p>Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni
                             pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan
@@ -57,7 +57,7 @@
         </div>
     </section>
     <!-- section footer -->
-    <?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
 </body>
 

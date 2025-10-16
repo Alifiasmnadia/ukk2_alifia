@@ -14,10 +14,45 @@
 </head>
 
 <body>
-<?php include 'navbar.php';?>
-    <!-- SECTION GALERI -->      
-        <?php
-            $galeri = [
+    <?php include 'navbar.php'; ?>
+
+    <!-- SECTION GALERI -->
+    <?php
+    // ==========================
+    // Fungsi untuk menampilkan galeri
+    // ==========================
+    function tampilkanGaleri($judulUtama, $judulTambahan, $gambarList)
+    {
+    ?>
+        <div class="card p-4 shadow-sm pt-5 mt-5">
+            <h4 class="text-center"><?= ($judulUtama) ?></h4>
+            <?php if (!empty($judulTambahan)): ?>
+                <h4 class="text-center"><?= ($judulTambahan) ?></h4>
+            <?php endif; ?>
+            <hr>
+            <div class="row">
+                <?php foreach ($gambarList as $gambar): ?>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="<?= ($gambar) ?>" class="card-img-top" alt="Foto Kegiatan">
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    <?php
+    }
+    ?>
+
+    <div class="section mt-5 pt-5 pb-5 section-title">
+        <div class="container">
+            <h2 class="text-center mb-4 judul-section">Galeri</h2>
+
+            <?php
+            // ==========================
+            // Galeri 1 - HUT RI KE-80
+            // ==========================
+            $galeriRI = [
                 'galeri/ri.JPG',
                 'galeri/ri1.JPG',
                 'galeri/ri2.JPG',
@@ -25,27 +60,12 @@
                 'galeri/ri4.JPG',
                 'galeri/ri5.JPG'
             ];
-            
-        ?>
-    <div class="section mt-5 pt-5 pb-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Galeri</h2>
-            <div class="card p-4 shadow-sm">
-                <h4 class="text-center">Upacara Peringatan HUT RI Ke-80</h4>
-                <hr>
-                <div class="row">
-                    <?php foreach ($galeri as $gambar): ?>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card h-100">
-                                <img src="<?=$gambar?>" class="card-img-top" alt="Kegiatan 1">
-                            </div>
-                        </div>
-                    <?php endforeach;?>
-                </div>
-            </div>
+            tampilkanGaleri('Upacara Peringatan HUT RI Ke-80', '', $galeriRI);
 
-            <?php
-            $galeri = [
+            // ==========================
+            // Galeri 2 - ENGLISH CLUB
+            // ==========================
+            $galeriEnglish = [
                 'galeri/english.JPG',
                 'galeri/english1.JPG',
                 'galeri/english2.JPG',
@@ -53,26 +73,16 @@
                 'galeri/english4.JPG',
                 'galeri/english5.JPG'
             ];
-        ?>
-            <div class="card p-4 shadow-sm pt-5 mt-5">
-                <h4 class="text-center">Talkshow With Intrenship Students From America Attended By
-                    ENGLISH CLUB</h4>
-                <h4 class="text-center">Of SMKN 4 TASIKMALAYA 2025</h4>
-                <hr>
-                <div class="row">
-                    <?php foreach ($galeri as $gambar): ?>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="<?=$gambar?>" class="card-img-top" alt="">
-                        </div>
-                    </div>
-                    <?php endforeach;?>
-                </div>
-            </div>
+            tampilkanGaleri(
+                'Talkshow With Intrenship Students From America Attended By ENGLISH CLUB',
+                'Of SMKN 4 TASIKMALAYA 2025',
+                $galeriEnglish
+            );
 
-
-            <?php
-            $galeri = [
+            // ==========================
+            // Galeri 3 - HARI GURU 2024
+            // ==========================
+            $galeriGuru = [
                 'galeri/hariguru.JPG',
                 'galeri/hariguru1.JPG',
                 'galeri/hariguru2.JPG',
@@ -80,27 +90,13 @@
                 'galeri/hariguru4.JPG',
                 'galeri/hariguru5.JPG'
             ];
-        ?>
-            <div class="card p-4 shadow-sm pt-5 mt-5">
-                <h4 class="text-center">HARI GURU 2024</h4>
-                <hr>
-                <div class="row">
-                    <?php foreach ($galeri as $gambar): ?>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="<?=$gambar?>" class="card-img-top" alt="">
-                        </div>
-                    </div>
-                    <?php endforeach;?>
-                </div>
-            </div>
+            tampilkanGaleri('HARI GURU 2024', '', $galeriGuru);
+            ?>
         </div>
     </div>
-    </div>
 
-
-    <!-- section footer -->
-<?php include 'footer.php';?>
+    <!-- SECTION FOOTER -->
+    <?php include 'footer.php'; ?>
 </body>
 
 </html>

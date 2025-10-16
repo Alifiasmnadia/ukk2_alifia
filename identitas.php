@@ -18,8 +18,8 @@
 
 
     <!-- SECTION IDENTITAS -->
-    <div class="container pt-5 mt-5 pb-5">
-        <h2 class="text-center mb-5 p-4">Identitas Sekolah</h2>
+    <div class="container pt-5 mt-5 pb-5 section-title">
+        <h2 class="text-center mb-5 p-4 judul-section">Identitas Sekolah</h2>
         <div class="text-center">
             <img src="galeri/LOGO-SMK4.Ba-Cc_BE.png" class="section-identitas" alt="">
         </div>

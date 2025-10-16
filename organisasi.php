@@ -14,21 +14,21 @@
 </head>
 
 <body>
-<?php include 'navbar.php';?>
+    <?php include 'navbar.php'; ?>
 
 
     <!-- SECTION ORGANISASI -->
-    <section class="section-organisasi">
+    <section class="section-organisasi section-title">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <h2 class="text-center pt-5">Organisasi</h2><br>
+                    <h2 class="judul-section pt-5">Organisasi</h2><br>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card text-center" >
+                <div class="card text-center">
                     <div class="card-body card-organisasi">
                         <img src="galeri/mpk.CJQoldjo.png" class=" img-organisasi" alt="">
                         <p>
@@ -38,31 +38,31 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card text-center card-organisasi" >
+                <div class="card text-center card-organisasi">
                     <div class="card-body">
-                        <img src="galeri/osis.BxfLHll2.png"  class=" img-organisasi alt="">
+                        <img src="galeri/osis.BxfLHll2.png" class=" img-organisasi alt="">
                         <p>
                         <h5>OSIS</h5>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card text-center card-organisasi">
-                    <div class="card-body">
-                        <img src="galeri/pub.C7gcMgJy.png"  class=" img-organisasi" alt="">
-                        <p>
-                        <h5>PUB</h5>
-                        </p>
+            <div class=" col-lg-4">
+                        <div class="card text-center card-organisasi">
+                            <div class="card-body">
+                                <img src="galeri/pub.C7gcMgJy.png" class=" img-organisasi" alt="">
+                                <p>
+                                <h5>PUB</h5>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        </div>
+            </div>
     </section>
     <!-- section footer -->
-<?php include 'footer.php';?>
+    <?php include 'footer.php'; ?>
 
 </body>
 
