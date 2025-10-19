@@ -31,8 +31,8 @@
                     <div class="card shadow card-visi">
                         <div class="card-body text-center cardbody-visi">
                             <h5 class="text-center">Visi</h5>
-                            <p>Terwujudnya lulusan yang Cerdas, Aktif, Kompetitif, Adaptif dan Produktif berlandaskan
-                                Iman dan Takwa
+                            <p>"Terwujudnya lulusan yang Cerdas, Aktif, Kompetitif, Adaptif dan Produktif berlandaskan
+                                Iman dan Takwa"<br>
                                 (CAKAP BERIMTAK)</p>
                         </div>
                     </div>

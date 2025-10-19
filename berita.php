@@ -44,7 +44,7 @@
 
 
     <!-- SECTION berita -->
-    <div class="container pt-5 mt-5 section-title bg-white">
+    <div class="container pt-5 mt-5 section-title ">
         <h2 class="text-center my-5 judul-section">Berita</h2>
         <div class="row">
             <?php foreach ($berita as $item): ?>
