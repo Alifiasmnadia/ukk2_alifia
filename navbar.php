@@ -43,6 +43,9 @@
         <li class="nav-item">
         <a class="nav-link active text-white" href="berita.php">Berita</a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link active text-white" href="biodata.php">Tentang Saya</a>
+        </li>
     </div>
 </div>
 </nav>

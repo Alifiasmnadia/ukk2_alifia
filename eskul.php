@@ -51,11 +51,15 @@
         </div>
 
 
-         <!-- Input Pencarian -->
-<div class="container mt-4">
+<!-- Input Pencarian -->
+<div class="container ">
     <div class="input-group mb-3">
-        <input type="text" id="searchInput" class="form-control" placeholder="Cari">
-        <button class="btn btn-primary" onclick="cariEskul()">Cari</button>
+        <input 
+            type="text" 
+            id="searchInput" 
+            class="form-control" 
+            placeholder="Cari Ekstrakurikuler..."
+            onkeyup="cariEskul()">
     </div>
 </div>
 
@@ -63,46 +67,52 @@
         <div class="container">
             <div class="row justify-content-center">
                 <?php foreach ($eskul as $item): ?>
-                <div class="col-lg-4 mb-5">
-                    <div class="card text-center" style="border-radius: 20px;">
-                        <div class="card-body">
-                            <img src="<?= $item['img'] ?>" class="img-eskul" alt="<?= $item['nama'] ?>">
-                            <h5 class="mt-3"><?= $item['nama'] ?></h5>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card text-center" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <img src="<?= $item['img'] ?>" class="img-eskul" alt="<?= $item['nama'] ?>">
+                                <h5 class="mt-3"><?= $item['nama'] ?></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </section>
 
-    <!-- Script Pencarian -->
-    <script>
-        function cariEskul() {
-            const input = document.getElementById('searchInput').value.toLowerCase().trim();
-            const cards = document.querySelectorAll('.card h5');
-            let found = false;
+<!-- Script Pencarian -->
+<script>
+function cariEskul() {
+    const input = document.getElementById('searchInput').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card h5');
+    let found = false;
 
-        cards.forEach(card => {
-            const nama = card.textContent.toLowerCase();
-            if (nama.includes(input)) {
-            card.closest('.col-lg-4').style.display = 'block'; // tampilkan
+    cards.forEach(card => {
+        const nama = card.textContent.toLowerCase();
+        const col = card.closest('.col-lg-4') || card.closest('.col-md-4') || card.closest('.col-6');
+        
+        if (nama.includes(input)) {
+            col.style.display = 'block'; // tampilkan
             found = true;
-            } else {
-            card.closest('.col-lg-4').style.display = 'none'; // sembunyikan
+        } else {
+            col.style.display = 'none'; // sembunyikan
         }
     });
 
-    if (!found) {
-        alert("Eskul " + input.toUpperCase() + " tidak ditemukan!");
+    // kalau input kosong, tampilkan semua
+    if (input === '') {
+        cards.forEach(card => {
+            const col = card.closest('.col-lg-4') || card.closest('.col-md-4') || card.closest('.col-6');
+            col.style.display = 'block';
+        });
     }
 }
-    </script>
+</script>
 
 
 
     <!-- Footer -->
     <?php include 'footer.php'; ?>
 </body>
+
 </html>
- 

@@ -25,7 +25,7 @@
         </div>
         <div class="card shadow" style="border-radius: 20px;">
             <div class="card-body ">
-                <table class="table table-borderless">
+                <table class="table table-borderless text-start">
                     <tr>
                         <td>Nama Sekolah</td>
                         <td>:</td>

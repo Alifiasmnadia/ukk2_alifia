@@ -18,15 +18,15 @@
     <!-- TUTUP NAV -->
 
     <!-- section jurusan -->
-    <div class="section section-title">
+    <div class="section bg section-title ">
         <div class="container pt-5 my-5">
             <h2 class="mb-5 judul-section">Konsentrasi keahlian</h2>
-            <div class="card shadow" style="border-radius: 15px;">
+            <div class="card shadow card-jurusan" >
                 <div class="row p-4 m-5">
                     <div class="col-lg-2 text-center">
                         <img src="galeri/tjkt.XeO8V4_I.png" class="img-fluid section-img-jurusan" alt="">
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 text-start">
                         <h5>Teknik Komputer dan Jaringan (TKJ)</h5>
                         <P>Konsentrasi ini fokus pada perancangan, pengelolaan, dan pemeliharaan jaringan komputer serta
                             teknologi telekomunikasi. Siswa dilatih untuk menguasai teknik instalasi jaringan, administrasi
@@ -34,12 +34,12 @@
                     </div>
                 </div>
             </div>
-            <div class="card shadow my-5" style="border-radius: 15px;">
+            <div class="card shadow my-5 card-jurusan" >
                 <div class="row p-4 m-5">
                     <div class="col-lg-2 text-center">
                         <img src="galeri/pplg.DhbRSnK2.png" class="img-fluid section-img-jurusan" alt="">
                     </div>
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 text-start ">
                         <h5>Pengembangan Perangkat Lunak dan Gim (PPLG)</h5>
                         <P>Bidang ini mempersiapkan siswa untuk merancang, mengembangkan, dan mengelola perangkat lunak dan
                             gim. Siswa akan belajar bahasa pemrograman, pengembangan aplikasi, desain gim, serta pengelolaan
@@ -47,36 +47,36 @@
                     </div>
                 </div>
             </div>
-            <div class="card shadow my-5" style="border-radius: 15px;">
+            <div class="card shadow my-5 card-jurusan" >
                 <div class="row p-4 m-5">
                     <div class="col-lg-2 text-center">
                         <img src="galeri/tbsm.5YZNeyvV.png" class="img-fluid section-img-jurusan" alt="">
                     </div>
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 text-start">
                         <h5>Teknik Sepeda Motor (TSM)</h5>
                         <P>Konsentrasi ini mengajarkan keterampilan teknis dalam perbaikan, perawatan, dan modifikasi sepeda
                             motor, serta pengetahuan bisnis dan kewirausahaan di bidang otomotif roda dua.</P>
                     </div>
                 </div>
             </div>
-            <div class="card shadow my-5" style="border-radius: 15px;">
+            <div class="card shadow my-5 card-jurusan" >
                 <div class="row p-4 m-5">
                     <div class="col-lg-2 text-center">
                         <img src="galeri/dkv.Btdc-HP2.png" class="img-fluid section-img-jurusan" alt="">
                     </div>
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 text-start">
                         <h5>Desain Komunikasi Visual (DKV)</h5>
                         <P>Bidang ini berfokus pada pengembangan kemampuan kreatif dalam desain grafis, ilustrasi, animasi,
                             dan media komunikasi visual untuk berbagai kebutuhan industri kreatif.</P>
                     </div>
                 </div>
             </div>
-            <div class="card shadow my-5" style="border-radius: 15px;">
+            <div class="card shadow my-5 card-jurusan" >
                 <div class="row p-4 m-5">
                     <div class="col-lg-2 text-center">
                         <img src="galeri/toi.BFD6ZBmB.png" class="img-fluid section-img-jurusan" alt="">
                     </div>
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 text-start">
                         <h5>Teknik Otomasi Industri (TOI)</h5>
                         <P>Konsentrasi ini mendalami teknologi otomasi di industri, meliputi pemrograman PLC, robotika, dan
                             sistem kontrol otomatis untuk meningkatkan efisiensi dan produktivitas di sektor manufaktur.</P>

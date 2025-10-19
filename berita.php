@@ -44,16 +44,16 @@
 
 
     <!-- SECTION berita -->
-    <div class="container pt-5 mt-5 section-title">
+    <div class="container pt-5 mt-5 section-title bg-white">
         <h2 class="text-center my-5 judul-section">Berita</h2>
         <div class="row">
             <?php foreach ($berita as $item): ?>
                 <div class="col-lg-6 mb-4">
-                    <div class="card h-100">
-                        <img src="<?= $item['img'] ?>" class="card-img-top img-fluid" alt="<?= $item['title'] ?>">
+                    <div class="card card-berita h-100">
+                        <img src="<?= $item['img'] ?>" class="img-berita card-img-top img-fluid" alt="">
                         <div class="card-body text-center">
-                            <h5><?= $item['title'] ?></h5>
-                            <a href="<?= $item['link'] ?>" class="btn btn-outline-primary mt-3" target="_blank">Baca selengkapnya</a>
+                            <h5 class="h5-berita"><?= $item['title'] ?></h5>
+                            <a href="<?= $item['link'] ?>" class=" btn btn-outline-primary mt-3" target="_blank">Baca selengkapnya</a>
                         </div>
                     </div>
                 </div>

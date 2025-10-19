@@ -18,19 +18,15 @@
                     <div style="padding: 20px;">
                         <h4>Kontak</h4>
                         <hr>
-                        <img src="galeri/phone.png" width="15px" height="15px"> + 0265312059 <br>
-                        <img src="galeri/email.png" width="15px" height="15px"> info@smkn4-tsm.sch.id
+                        <i class="bi bi-telephone-fill me-2"></i> + 0265312059 <br>
+                        <i class="bi bi-envelope-at me-3"></i>info@smkn4-tsm.sch.id
                         <br><br><br>
                         <h4>Media Sosial</h4>
                         <hr>
-                        <a href="https://www.facebook.com/4smkn/"><img src="galeri/facebook.png" width="30px"
-                                height="30px"></a>
-                        <a href="https://www.instagram.com/smkn4tsmofficial/?igsh=N3k1MTlyeXo4cW9q#"><img
-                                src="galeri/instagram.png" width="30px" height="30px"></a>
-                        <a href="https://www.tiktok.com/@smkn4tasikmalaya?is_from_webapp=1&sender_device=pc"><img
-                                src="galeri/tiktok.png" width="30px" height="30px"></a>
-                        <a href="https://www.youtube.com/@smkn4tasikmalayamediaoffic704"><img src="galeri/youtube.png"
-                                width="30px" height="30px"></a>
+                        <a href="https://www.facebook.com/4smkn/"><i class="bi bi-facebook fs-3 me-2 text-light"></i></a>
+                        <a href="https://www.instagram.com/smkn4tsmofficial/?igsh=N3k1MTlyeXo4cW9q#"><i class="bi bi-instagram me-2 fs-3 text-light"></i></a>
+                        <a href="https://www.tiktok.com/@smkn4tasikmalaya?is_from_webapp=1&sender_device=pc"><i class="bi bi-tiktok me-2 fs-3 text-light"></i></a>
+                        <a href="https://www.youtube.com/@smkn4tasikmalayamediaoffic704"><i class="bi bi-youtube  fs-3 text-light"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3">
