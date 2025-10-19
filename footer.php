@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 <footer style="background-color: #005B8A; color: white;">
         <div class="container">
             <div class="row">
